@@ -35,14 +35,14 @@
     </modules>
 
     <properties>
-        <aem.host>18.141.199.224</aem.host>
+        <!-- <aem.host>18.141.199.224</aem.host>
         <aem.port>4502</aem.port>
         <aem.publish.host>18.141.199.224</aem.publish.host>
         <aem.publish.port>4503</aem.publish.port>
         <sling.user>admin</sling.user>
         <sling.password>admin</sling.password>
         <vault.user>admin</vault.user>
-        <vault.password>admin</vault.password>
+        <vault.password>admin</vault.password> -->
         <core.wcm.components.version>2.9.0</core.wcm.components.version>
         <com.adobe.acs.commons.version>4.7.2</com.adobe.acs.commons.version>
         
@@ -235,10 +235,10 @@ Bundle-DocURL:
                     <groupId>org.apache.sling</groupId>
                     <artifactId>sling-maven-plugin</artifactId>
                     <version>2.4.0</version>
-                    <configuration>
+                    <!-- <configuration>
                         <slingUrl>http://${aem.host}:${aem.port}/system/console</slingUrl>
                         <deploymentMethod>WebConsole</deploymentMethod>
-                    </configuration>
+                    </configuration> -->
                 </plugin>
                 <!-- HTL Maven Plugin -->
                 <plugin>
@@ -259,7 +259,7 @@ Bundle-DocURL:
                     </configuration>
                 </plugin>
                 <!-- Content Package Plugin -->
-                <plugin>
+                <!-- <plugin>
                     <groupId>com.day.jcr.vault</groupId>
                     <artifactId>content-package-maven-plugin</artifactId>
                     <version>1.0.2</version>
@@ -269,7 +269,7 @@ Bundle-DocURL:
                         <userId>${vault.user}</userId>
                         <password>${vault.password}</password>
                     </configuration>
-                </plugin>
+                </plugin> -->
                 <!-- Maven Enforcer Plugin -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -474,7 +474,7 @@ Bundle-DocURL:
                                 </execution>
                             </executions>
                         </plugin>
-                        <plugin>
+                        <!-- <plugin>
                             <groupId>com.day.jcr.vault</groupId>
                             <artifactId>content-package-maven-plugin</artifactId>
                             <executions>
@@ -488,7 +488,7 @@ Bundle-DocURL:
                                     </configuration>
                                 </execution>
                             </executions>
-                        </plugin>
+                        </plugin> -->
                     </plugins>
                 </pluginManagement>
             </build>
@@ -514,7 +514,7 @@ Bundle-DocURL:
                                 </execution>
                             </executions>
                         </plugin>
-                        <plugin>
+                        <!-- <plugin>
                             <groupId>com.day.jcr.vault</groupId>
                             <artifactId>content-package-maven-plugin</artifactId>
                             <executions>
@@ -528,7 +528,7 @@ Bundle-DocURL:
                                     </configuration>
                                 </execution>
                             </executions>
-                        </plugin>
+                        </plugin> -->
                     </plugins>
                 </pluginManagement>
             </build>
