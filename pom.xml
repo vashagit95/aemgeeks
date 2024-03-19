@@ -256,7 +256,19 @@ Bundle-DocURL:
                     <version>1.0.3</version>
                     <configuration>
                         <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
-                    </configuration>
+                        <validatorsSettings>
+                            <jackrabbit-nodetypes>
+                                 <options>
+                                        <!-- use the nodetypes and namespaces from the aem-nodetypes.jar provided in the plugin dependencies -->
+                                                      
+                                    <cnds>tccl:aem.cnd</cnds>
+                                                  
+                                </options>
+                                            
+                             </jackrabbit-nodetypes>
+                                      
+                         </validatorsSettings>
+                 </configuration>
                 </plugin>
                 <!-- Content Package Plugin -->
                 <!-- <plugin>
