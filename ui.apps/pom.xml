@@ -81,7 +81,7 @@
                     </dependencies>                    
                 </configuration>
             </plugin>
-            <plugin>
+            <!-- <plugin>
                 <groupId>com.day.jcr.vault</groupId>
                 <artifactId>content-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
@@ -89,7 +89,7 @@
                     <verbose>true</verbose>
                     <failOnError>true</failOnError>
                 </configuration>
-            </plugin>
+            </plugin> -->
 
             <plugin>
                 <groupId>org.apache.sling</groupId>
